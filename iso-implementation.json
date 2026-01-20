@@ -1,0 +1,384 @@
+{
+    "version": "1.0",
+    "description": "Implementation of ISO Standard in company. The Implementation covers security(SEC) and human resources(HR)",
+    "security": {
+        "description": "Implementation of  ISO security(ISMS) standard prior to ISO/IEC 27001:2022",
+        "rules": {
+            "language_priority": "vi",
+            "conflict_rule": "Whenever there is a conflict, corporate security has higher priority"
+        },
+        "handbooks": {
+        "corporate": [
+            {
+                "metadata": "Corporate security handbook",
+                "output": "SEC-HB-CORP-GENERAL-GROUP-POLICY.md",
+                "input": "01. Chính sách và Sổ tay ATTT\\NTT DATA, Inc. Group Information Security Policy.md",
+                "lang": "en"
+            },
+            {
+                "metadata": "Corporate security handbook",
+                "output": "SEC-HB-CORP-GENERAL-GROUP-POLICY-VN.md",
+                "input": "01. Chính sách và Sổ tay ATTT\\NTT DATA, Inc. Group Information Security Policy-VN.md",
+                "lang": "vi"
+            },            
+            {
+                "metadata": "Corporate security handbook",
+                "output": "SEC-HB-CORP-AUA-IT-ASSETS.md",
+                "input": "01. Chính sách và Sổ tay ATTT\\CS-ST-02-Acceptable Use of IT Assets Security Standard.md",
+                "lang": "en"
+            },
+             {
+                "metadata": "Corporate security handbook",
+                "output": "SEC-HB-CORP-AUA-IT-ASSETS-VN.md",
+                "input": "01. Chính sách và Sổ tay ATTT\\CS-ST-02-Acceptable Use of IT Assets Security Standard-VN.md",
+                "lang": "vi"
+            }
+        ],
+        "company": [
+            {
+                "metadata": "Company security handbook",
+                "output": "SEC-HB-COMP-ISMS-HANDBOOK.md",
+                "input": "01. Chính sách và Sổ tay ATTT\\NTT DATA VDS_Sổ tay An toàn thông tin.md",
+                "lang": "vi"
+            },
+            {
+                "metadata": "Company security objectives",
+                "output": "SEC-HB-COMP-ISMS-OBJECTIVES.md",
+                "input": "01. Chính sách và Sổ tay ATTT\\NTT DATA VDS_Mục tiêu An toàn thông tin 2025.md",
+                "lang": "vi"
+            }
+        ]
+    },
+    "regulations": {
+        "asset-mngr": [
+            {
+                "metadata": "Asset management",
+                "output": "SEC-REG-02-ASSET-MGMT.md",
+                "input": "02. QD Quản lý tài sản CNTT\\Quy định_Quản lý tài sản thông tin.md",
+                "lang": "vi"
+            }
+        ],
+        "access-mngr": [
+            {
+                "metadata": "Access management",
+                "output": "SEC-REG-03-ACCESS-MGMT.md",
+                "input": "03. QD Kiểm soát truy cập\\Quy định_Kiểm soát truy cập và quản lý mật khẩu.md",
+                "lang": "vi",
+                "processes": [
+                    {
+                        "output": "SEC-PROC-03-ACCESS-MGMT-USER.md",
+                        "input": "03. QD Kiểm soát truy cập\\Quy định_Kiểm soát truy cập và quản lý mật khẩu.md"
+                    }
+                ]
+            }
+            
+        ],
+        "physical-env-mngr": [
+            {
+                "metadata": "Environment and physical security",
+                "output": "SEC-REG-04-PHYSICAL-MGMT.md",
+                "input": "04. QD An toàn vật lý và môi trường\\Quy định_An toàn vật lý và môi trường.md",
+                "lang": "vi",
+                "processes": [
+                    {
+                        "output": "SEC-PROC-04-GUESS-ACCESS-MGMT-USER.md",
+                        "input": "04. QD An toàn vật lý và môi trường\\Quy trình_Kiểm soát khách.md"
+                    }
+                ]
+            },
+            {
+                "metadata": "Environment and physical security",
+                "lang": "vi",
+                "output": "SEC-REG-04-EMP-CARD-MGMT.md",
+                "input": "04. QD An toàn vật lý và môi trường\\Quy định_Quản lý truy cập và Sử dụng thẻ nhân viên.md"                
+            }
+        ],
+        "operation-mngr": [
+            {
+                "metadata": "Operation security",
+                "output": "SEC-REG-05-OPERATION-MGMT.md",
+                "input": "05. QD An toàn các hoạt động\\Quy định_An toàn các hoạt động.md",
+                "lang": "vi"
+            }
+        ],
+        "communication-mngr": [
+            {
+                "metadata": "Commmunication security",
+                "output": "SEC-REG-06-COMMUNICATION-MGMT.md",
+                "input": "06. QD An toàn truyền thông\\Quy định_An toàn truyền thông.md",
+                "lang": "vi",
+                "processes": [
+                    {
+                        "output": "SEC-PROC-06-COMMUNICATION-WIFI-MGMT.md",
+                        "input": "06. QD An toàn truyền thông\\Quy trình_Đánh giá mạng không dây.md"
+                    }
+                ]
+            }            
+        ],
+        "remote-mngr": [
+            {
+                "metadata": "Remote working regulations",
+                "output": "SEC-REG-07-REMOTE-MGMT.md",
+                "input": "07. QD Làm việc từ xa\\Quy định_Làm việc từ xa.md",
+                "lang": "vi",
+                "guidelines": [
+                    {
+                        "output": "SEC-GUIDE-07-VPN-ACCESS.md",
+                        "input": "07. QD Làm việc từ xa\\Hướng dẫn_Sử dụng NTT DATA VDS Global Protect Access.md"
+                    },
+                    {
+                        "output": "SEC-GUIDE-07-VPN-ACCESS-PERSONAL-PC.md",
+                        "input": "07. QD Làm việc từ xa\\Hướng dẫn_Sử dụng NTT DATA VDS Global Protect Access-NV dùng máy cá nhân.md"
+                    }
+                ]
+            },
+            {
+                "metadata": "Remote working regulations",
+                "output": "SEC-REG-07-PC-LOST-MGMT.md",
+                "input": "07. QD Làm việc từ xa\\Quy định_Xử lý khi mất máy tính.md",
+                "lang": "vi"             
+            }
+        ],
+         "vulnerability-mngr": [
+            {
+                "metadata": "Vulnerability management",
+                "output": "SEC-REG-08-VULNERABILITY-MGMT.md",
+                "input": "08. QD Quản lý điểm yếu kỹ thuật\\Quy định_Quản lý điểm yếu kỹ thuật.md",
+                "lang": "vi"
+            },
+            {
+                "metadata": "Windows security update management",
+                "output": "SEC-REG-08-SEC-UPDATE-MGMT.md",
+                "input": "08. QD Quản lý điểm yếu kỹ thuật\\Tiêu chuẩn_Cấu hình WSUS.md",
+                "lang": "vi"
+            }
+        ],
+        "capacity-mngr": [
+            {
+                "metadata": "Capacity management",
+                "output": "SEC-REG-09-CAPACITY-MGMT.md",
+                "input": "09. QD Quản lý hiệu năng dung lượng\\Quy định_Quản lý hiệu năng dung lượng.md",
+                "lang": "vi"
+            }
+        ],
+        "encryption-mngr": [
+             {
+                "metadata": "Encryption management",
+                "output": "SEC-REG-10-ENCRYPTION-MGMT.md",
+                "input": "10. QD Quản lý mã hóa\\Quy định_Quản lý mã hóa.md",
+                "lang": "vi",
+                "guidelines": [
+                    {
+                        "output": "SEC-GUIDE-10-ENCRYPTION.md",
+                        "input": "10. QD Quản lý mã hóa\\ISMS_Hướng dẫn mã hóa.md"
+                    }                    
+                ]
+            }
+        ],
+        "backup-mngr": [
+            {
+                "metadata": "Backup management",
+                "output": "SEC-REG-11-BACKUP-MGMT.md",
+                "input": "11. QD Sao lưu dữ liệu\\Quy định_Sao lưu dữ liệu.md",
+                "lang": "vi"
+            }
+        ],
+        "sdlc-mngr": [
+            {
+                "metadata": "Software development life cycle management",
+                "output": "SEC-REG-12-SDLC-MGMT.md",
+                "input": "12. QD Tiếp nhận, phát triển và duy trì hệ thống\\Quy định_Tiếp nhận, phát triển và duy trì hệ thống.md",
+                "lang": "vi"
+            }
+        ],
+        "threat-mngr": [
+            {
+                "metadata": "Threat management",
+                "output": "SEC-REG-13-THREAT-MGMT.md",
+                "input": "13. QD Quản lý mối đe dọa\\Quy định_Quản lý mối đe dọa.md",
+                "lang": "vi"
+            }
+        ],
+        "change-mngr": [
+            {
+                "metadata": "Change management",
+                "output": "SEC-REG-14-CHANGE-MGMT.md",
+                "input": "14. QD Quản lý thay đổi hệ thống CNTT\\Quy định_Quản lý thay đổi.md",
+                "lang": "vi",
+                "processes": [
+                    {
+                        "output": "SEC-PROC-14-NETWORK-CONFIG-CHANGE.md",
+                        "input": "14. QD Quản lý thay đổi hệ thống CNTT\\Process_Network_Configuration_Change.md"
+                    }
+                ]
+            }            
+        ],
+        "incident-mngr": [
+            {
+                "metadata": "Incident management",
+                "output": "SEC-REG-15-INCIDENT-MGMT.md",
+                "input": "15. QD Quản lý sự cố\\Quy định_Quản lý sự cố.md",
+                "lang": "vi"
+            }
+        ],
+        "continuity-management": [
+            {
+                "metadata": "continuity management",
+                "output": "SEC-REG-16-CONTINUITY-MGMT.md",
+                "input": "16. QD Đảm bảo tính liên tục trong ATTT\\Quy định_Đảm bảo tính liên tục trong ATTT.md",
+                "lang": "vi",
+                "processes": [
+                    {
+                        "output": "SEC-PROC-16-CONTINUITY-MGMT-SYSTEM-ONOFF.md",
+                        "input": "16. QD Đảm bảo tính liên tục trong ATTT\\Quy trình_Bật tắt thiết bị hệ thống quan trọng.md"
+                    }
+                ],
+                "handbooks": [
+                    {
+                        "output": "SEC-HB-CONTINUITY-BIA-MANUAL.md",
+                        "input": "16. QD Đảm bảo tính liên tục trong ATTT\\BIA Execution Manual EMEAL v1.0.md"
+                    },
+                    {
+                        "output": "SEC-HB-CONTINUITY-GOVERNANCE.md",
+                        "input": "16. QD Đảm bảo tính liên tục trong ATTT\\CS-GD-17-Business Continuity Governance Model.md"
+                    },
+                    {
+                        "output": "SEC-HB-CONTINUITY-POLICY.md",
+                        "input": "16. QD Đảm bảo tính liên tục trong ATTT\\CS-PL-02-Business Continuity & Crisis Management Policy.md"
+                    },
+                    {
+                        "output": "SEC-HB-CONTINUITY-FUNDAMENTALS.md",
+                        "input": "16. QD Đảm bảo tính liên tục trong ATTT\\CS-SP-14-CorpSec BC Crisis Management Fundamentals.md"
+                    },
+                    {
+                        "output": "SEC-HB-CONTINUITY-PROTOCOL.md",
+                        "input": "16. QD Đảm bảo tính liên tục trong ATTT\\CS-TM-01-CorpSec BC Crisis Management Protocol.md"
+                    }
+                ]
+            }
+        ],
+        "personal-data-mngr": [
+            {
+                "metadata": "Personal data protection management",
+                "lang": "vi",
+                "output": "SEC-REG-17-PERSONAL-DATA-MGMT.md",
+                "input": "17. QD Bảo vệ dữ liệu cá nhân\\Regulation_Personal Data Protection.md"
+            }
+        ],
+        "training-mngr": [
+            {
+                "metadata": "Security training management",
+                "lang": "vi",
+                "output": "SEC-REG-18-TRAINING-MGMT.md",
+                "input": "18. QD Đào tạo nhận thức ATTT\\Quy định_Đào tạo nhận thức An toàn thông tin.md"
+            }
+        ],
+         "supplier-mngr": [
+            {
+                "metadata": "Supplier management",
+                "lang": "vi",
+                "output": "SEC-REG-19-SUPPLIER-MGMT.md",
+                "input": "19. QD Quản lý nhà cung cấp\\Quy định_Quản lý nhà cung cấp.md"
+            },
+            {
+                "metadata": "Security commitment management",
+                "lang": "vi",
+                "output": "SEC-REG-19-COMMITMENT-MGMT.md",
+                "input": "19. QD Quản lý nhà cung cấp\\Quy định_Cam kết bảo mật thông tin.md"
+            }
+        ],
+        "compliance-mngr": [
+            {
+                "metadata": "compliance management",
+                "lang": "vi",
+                "output": "SEC-REG-20-COMPLIANCE-MGMT.md",
+                "input": "20. QD Quản lý sự tuân thủ\\Quy định_Quản lý sự tuân thủ.md"
+            }
+        ],
+        "violation-mngr": [
+            {
+                "metadata": "security violation management",
+                "lang": "vi",
+                "output": "SEC-REG-21-VIOLATION-MGMT.md",
+                "input": "21. QD Xử lý vi phạm ATTT\\Quy định_Xử lý vi phạm An toàn thông tin.md"
+            }
+        ],
+        "others": [
+            {
+                "output": "SEC-REG-00-OTHERS.md",
+                "mock": "True",
+                "input": "Other regulations",
+                "metadata": "Other regulations",
+                "lang": "vi",
+                "processes": [
+                    {
+                        "output": "SEC-PROC-00-DATA-DISPOSAL.md",
+                        "input": "22. QT Hủy dữ liệu thông tin\\Quy trình_Hủy dữ liệu thông tin.md"
+                    },
+                    {
+                        "output": "SEC-PROC-00-REQUEST-MGMT.md",
+                        "input": "23. QT Quản lý yêu cầu CNTT\\Quy trình_Quản lý yêu cầu.md"
+                    },
+                    {
+                        "output": "SEC-PROC-00-NONCONFORMING-CONTROL.md",
+                        "input": "28. TT Quản lý điểm không phù hợp\\Procedure_Nonconforming Control.md"
+                    }
+                ],
+                "guidelines": [
+                    {
+                        "output": "SEC-GUIDE-00-DOCUMENTED-INFO-CONTROL.md",
+                        "input": "27. TT Quản lý hồ sơ tài liệu\\Procedure_Documented Information Control.md"
+                    },
+                    {
+                        "output": "SEC-GUIDE-00-CONTACT-ESCALATION.md",
+                        "input": "30. Hướng dẫn liên hệ với các bên liên quan\\Hướng dẫn_Đầu mối liên lạc và thẩm quyền liên lạc.md"
+                    }     
+                ]
+            }
+            
+        ]
+    }
+    },
+    "hr": {
+       "processes":[
+            {
+                "metadata": "HR management: recruitment",
+                "lang": "vi",
+                "output": "HR-PROC-26-RECRUITMENT.md",
+                "input": "26. QT Đảm bảo nguồn nhân lực\\Quy trình_Tuyển dụng\\Process_HR Recruitment.md"
+            },
+            {
+                "metadata": "HR management: Resignation",
+                "lang": "en",
+                "output": "HR-PROC-26-RESIGNATION.md",
+                "input": "26. QT Đảm bảo nguồn nhân lực\\Quy trình_Nghỉ việc\\Process_HR Resignation.md"
+            }
+        ],
+    "job_description": [
+            {
+                "output": "HR-JD-CISP.md",
+                "input": "31. Job Description\\Job Description_CISO.md"
+            },
+            {
+                "output": "HR-JD-IT-HEAD.md",
+                "input": "31. Job Description\\Job Description_Head of IT.md"
+            },
+            {
+                "output": "HR-JD-IT-MANAGER.md",
+                "input": "31. Job Description\\Job Description_IT Manager.md"
+            },
+            {
+                "output": "HR-JD-SUPPORT-OFFICER.md",
+                "input": "31. Job Description\\Job Description_IT Support Officer.md"
+            },
+            {
+                "output": "HR-JD-NET-ADMIN.md",
+                "input": "31. Job Description\\Job Description_Network Administrator.md"
+            },
+            {
+                "output": "HR-JD-NET-MANAGER.md",
+                "input": "31. Job Description\\Job Description_Network Manager.md"
+            }
+        ]
+    }
+}
